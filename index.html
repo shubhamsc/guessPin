@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Guess Pin</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="pin.js" charset="utf-8"></script>
+  </head>
+  <body>
+    <div class="home">
+      <div id="title">
+        <h2>Guess Pin</h2>
+      </div>
+      <div id="pin"></div>
+      <div id="0"class="enteredPin">_</div>
+      <div id="1"class="enteredPin">_</div>
+      <div id="2"class="enteredPin">_</div>
+      <div id="3"class="enteredPin">_</div>
+      <br>
+      <input type="text" id="pinBox" maxlength="4"><br>
+      <button type="submit" onclick="submitPin()">Submit</button>
+      <button type="reset" onclick="restart()">Restart</button>
+    </div>
+    <div id="result"></div>
+    <div id="attempt"></div>
+    <h3>rules and guidelines:</h3>
+    <ol type="1">
+      <li>You are allowed 6 attempts to enter a four-digit PIN code.<br> After 6 attempts, the PIN code resets to a random (other) one.</li>
+      <li>Pin doesn't have repeated digits(e.g. 9981,5555 etc).</li>
+      <li>If the correct digit is in the correct place, that digit will be green.</li>
+      <li>If the correct digit (i.e. a digit that is in the actual PIN) is in the incorrect place, that digit will be yellow.</li>
+      <li>If an incorrect digit is entered (i.e. a digit that is not in the actual PIN), that digit will be red.</li>
+    </ol>
+  </body>
+</html>
